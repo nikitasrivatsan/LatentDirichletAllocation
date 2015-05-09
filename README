@@ -1,0 +1,9 @@
+Akshay Srivatsan
+asrivat1@jhu.edu
+
+Overview:
+=========
+
+For this project I decided to create an unsupervised topic detection model based on Latent Dirichlet Allocation (LDA). One interesting application for this would be in finding similarities in the research conducted by professors at JHU, or in the courses that they teach.
+
+My program is split into two parts. The first is in grab_info.py which scrapes a jhu website for information about the education and publication history of faculty at the Whiting School of Engineering.
