@@ -1,8 +1,7 @@
-Akshay Srivatsan - asrivat1@jhu.edu
-Information Retrieval Final Project
+## Akshay Srivatsan - asrivat1@jhu.edu
+## Information Retrieval Final Project
 
-Usage:
-======
+# Usage:
 
 First run grab_info_steam.py to scrape the Steam library for data. You can terminate that process whenever you like, but I found that good results were obtained after scraping ~1200 titles, which may take close to half an hour depending on connectivity.
 
@@ -10,18 +9,17 @@ Then run run-LDA.sh to do inference on the LDA model using the collected data. I
 
 You can then rune analyze.py to print out a brief summary of the parameters that the model has learned. It takes args nameFile and outputFile which are games-names and steam respectively by default.
 
-Overview:
-=========
+# Overview:
 
 For this project, I used the Latent Dirichlet Allocation model to perform topic detection on video games in the Steam library. Steam is a video game marketplace with 125 million active users that hosts thousands of popular games for PC. Each game on Steam has a corresponding web page that contains a brief description of the title, some keywords,
 
-Results:
-========
+# Results:
 
 I obtained the following results on a dataset of 1247 titles, using 25 topics, parameters 0.1 and 0.01 for alpha and beta respectively, and 1100 iterations of which 1000 were spent burning in the sampling chain to a stable state.
 
-Common Words in Topics
-Topic 0:
+## Common Words in Topics
+
+**Topic 0:**
 rpg
 combat
 character
@@ -38,7 +36,7 @@ heroes
 skill
 party
 
-Topic 1:
+**Topic 1:**
 weapons
 zombies
 dead
@@ -55,7 +53,7 @@ ammo
 combat
 map
 
-Topic 2:
+**Topic 2:**
 life
 half
 needed
@@ -72,7 +70,7 @@ fire
 backup
 portal
 
-Topic 3:
+**Topic 3:**
 gb
 hd
 nvidia
@@ -89,7 +87,7 @@ windows
 series
 ghz
 
-Topic 4:
+**Topic 4:**
 turn
 based
 strategy
@@ -106,7 +104,7 @@ battle
 mission
 board
 
-Topic 5:
+**Topic 5:**
 game
 fixed
 added
@@ -123,7 +121,7 @@ fix
 mode
 comments
 
-Topic 6:
+**Topic 6:**
 review
 helpful
 funny
@@ -140,7 +138,7 @@ products
 posted
 hrs
 
-Topic 7:
+**Topic 7:**
 game
 time
 don
@@ -157,7 +155,7 @@ ll
 things
 review
 
-Topic 8:
+**Topic 8:**
 war
 units
 strategy
@@ -174,7 +172,7 @@ multiplayer
 army
 men
 
-Topic 9:
+**Topic 9:**
 levels
 level
 music
@@ -191,7 +189,7 @@ challenging
 indie
 controller
 
-Topic 10:
+**Topic 10:**
 enemies
 mode
 game
@@ -208,7 +206,7 @@ arcade
 enemy
 level
 
-Topic 11:
+**Topic 11:**
 story
 characters
 adventure
@@ -225,7 +223,7 @@ plot
 game
 original
 
-Topic 12:
+**Topic 12:**
 stealth
 metro
 funny
@@ -242,7 +240,7 @@ people
 guards
 blood
 
-Topic 13:
+**Topic 13:**
 sonic
 tower
 defense
@@ -259,7 +257,7 @@ units
 research
 ai
 
-Topic 14:
+**Topic 14:**
 space
 ship
 ships
@@ -276,7 +274,7 @@ system
 build
 fleet
 
-Topic 15:
+**Topic 15:**
 early
 access
 review
@@ -293,7 +291,7 @@ alpha
 feedback
 version
 
-Topic 16:
+**Topic 16:**
 hat
 cards
 card
@@ -310,7 +308,7 @@ online
 player
 win
 
-Topic 17:
+**Topic 17:**
 enemy
 spotted
 city
@@ -327,7 +325,7 @@ money
 buildings
 motion
 
-Topic 18:
+**Topic 18:**
 game
 games
 gameplay
@@ -344,7 +342,7 @@ interesting
 player
 reviews
 
-Topic 19:
+**Topic 19:**
 game
 players
 play
@@ -361,7 +359,7 @@ community
 match
 maps
 
-Topic 20:
+**Topic 20:**
 racing
 cars
 lego
@@ -378,7 +376,7 @@ truck
 drive
 city
 
-Topic 21:
+**Topic 21:**
 dungeon
 items
 rogue
@@ -395,7 +393,7 @@ random
 isaac
 dungeons
 
-Topic 22:
+**Topic 22:**
 nope
 horror
 atmosphere
@@ -412,7 +410,7 @@ scary
 explore
 anarchy
 
-Topic 23:
+**Topic 23:**
 puzzles
 puzzle
 hidden
@@ -429,7 +427,7 @@ gb
 point
 command
 
-Topic 24:
+**Topic 24:**
 original
 wars
 star
@@ -446,8 +444,9 @@ played
 edition
 version
 
-Documents with High Proportion of Topics
-Topic 0:
+## Documents with High Proportion of Topics
+
+**Topic 0:**
 Breath of Death VII
 The Book of Legends
 Cthulhu Saves the World
@@ -464,7 +463,7 @@ WAKFU
 Torchlight II
 The Incredible Adventures of Van Helsing II
 
-Topic 1:
+**Topic 1:**
 Rising Storm Game of the Year Edition
 S.T.A.L.K.E.R.: Call of Pripyat
 Dying Light
@@ -481,7 +480,7 @@ Dead Pixels
 Serious Sam Classic: The Second Encounter
 Receiver
 
-Topic 2:
+**Topic 2:**
 Stronghold Crusader HD
 Counter-Strike: Source
 Half-Life: Blue Shift
@@ -498,7 +497,7 @@ Counter-Strike: Global Offensive
 Counter-Strike
 Team Fortress Classic
 
-Topic 3:
+**Topic 3:**
 Street Fighter X Tekken
 Call of Duty: Black Ops III
 Toren
@@ -515,7 +514,7 @@ Might & Magic: Heroes VI
 Transformers: Fall of Cybertron
 Worms Clan Wars
 
-Topic 4:
+**Topic 4:**
 Mordheim: City of the Damned
 Space Hulk
 Space Hulk Ascension
@@ -532,7 +531,7 @@ Chainsaw Warrior
 Jagged Alliance 2 Gold
 Hell
 
-Topic 5:
+**Topic 5:**
 Gang Beasts
 GameGuru
 Pool Nation
@@ -549,7 +548,7 @@ Just Cause 3
 Spacebase DF-9
 Trine 3: The Artifacts of Power
 
-Topic 6:
+**Topic 6:**
 Plug & Play
 Floating Point
 The Basement Collection
@@ -566,7 +565,7 @@ Universe Sandbox
 Sonic the Hedgehog
 AdVenture Capitalist
 
-Topic 7:
+**Topic 7:**
 Vindictus
 Streets of Chaos
 Always Sometimes Monsters
@@ -583,7 +582,7 @@ Elite: Dangerous
 Firefall
 MapleStory
 
-Topic 8:
+**Topic 8:**
 Empire: Total War
 Crusader Kings II
 Men of War: Assault Squad
@@ -600,7 +599,7 @@ Total War: ROME II - Emperor Edition
 Commander: The Great War
 Europa Universalis IV
 
-Topic 9:
+**Topic 9:**
 Giana Sisters: Twisted Dreams
 BIT.TRIP Presents... Runner2: Future Legend of Rhythm Alien
 Giana Sisters: Twisted Dreams - Rise of the Owlverlord
@@ -617,7 +616,7 @@ Dustforce DX
 Beatbuddy: Tale of the Guardians
 JumpJet Rex
 
-Topic 10:
+**Topic 10:**
 Divekick
 Mitsurugi Kamui Hikae
 Devil May Cry 3 Special Edition
@@ -634,7 +633,7 @@ Phantom Breaker: Battle Grounds
 Super Galaxy Squadron
 Ultratron
 
-Topic 11:
+**Topic 11:**
 Blackwell Unbound
 Blackwell Convergence
 The Blackwell Legacy
@@ -651,7 +650,7 @@ Deponia
 Monkey Island 2 Special Edition: LeChucks Revenge
 The Cat Lady
 
-Topic 12:
+**Topic 12:**
 Viscera Cleanup Detail: Santa's Rampage
 Surgeon Simulator 2013
 Prison Architect
@@ -668,7 +667,7 @@ Tom Clancys Splinter Cell Blacklist
 Octodad: Dadliest Catch
 Little Inferno
 
-Topic 13:
+**Topic 13:**
 Sonic the Hedgehog 2
 Sonic 3 and Knuckles
 Sonic the Hedgehog
@@ -685,7 +684,7 @@ Sonic the Hedgehog 4 - Episode II
 Sid Meier's Civilization V
 Galactic Civilizations II: Ultimate Edition
 
-Topic 14:
+**Topic 14:**
 Train Simulator 2015
 X2: The Threat
 X Rebirth
@@ -702,7 +701,7 @@ Strike Suit Zero
 Horizon
 Kerbal Space Program
 
-Topic 15:
+**Topic 15:**
 Medieval Engineers
 Rising World
 Oort Online
@@ -719,7 +718,7 @@ Blockscape
 Xsyon - Prelude
 Beasts of Prey
 
-Topic 16:
+**Topic 16:**
 Team Fortress 2
 Magic: The Gathering - Duels of the Planeswalkers 2013
 Magic 2014  Duels of the Planeswalkers
@@ -736,7 +735,7 @@ BloodRealm: Battlegrounds
 Royal Quest
 Battlegrounds of Eldhelm
 
-Topic 17:
+**Topic 17:**
 Battlefield 2: Complete Collection
 Moonbase Alpha
 Cities in Motion
@@ -753,7 +752,7 @@ Banished
 SimCity 4 Deluxe Edition
 Tropico 5
 
-Topic 18:
+**Topic 18:**
 Aquaria
 Claire
 Full Bore
@@ -770,7 +769,7 @@ Closure
 Skyborn
 NaissanceE
 
-Topic 19:
+**Topic 19:**
 Awesomenauts
 Strife
 Solstice Arena
@@ -787,7 +786,7 @@ Blacklight: Retribution
 Block N Load
 Sins of a Dark Age
 
-Topic 20:
+**Topic 20:**
 Assetto Corsa
 GRID Autosport
 RaceRoom Racing Experience
@@ -804,7 +803,7 @@ Copa Petrobras de Marcas
 LEGO Batman 2 DC Super Heroes
 Gotham City Impostors Free to Play
 
-Topic 21:
+**Topic 21:**
 Ziggurat
 Rogue Legacy
 Diehard Dungeon
@@ -821,7 +820,7 @@ A Wizard's Lizard
 Dungeonmans
 Overture
 
-Topic 22:
+**Topic 22:**
 Cry of Fear
 Anarchy Arcade
 Outlast
@@ -838,7 +837,7 @@ NaissanceE
 Amnesia: The Dark Descent
 Passing Pineview Forest
 
-Topic 23:
+**Topic 23:**
 STAR WARS Battlefront II
 Enigmatis: The Ghosts of Maple Creek
 Grim Legends: The Forsaken Bride
@@ -855,7 +854,7 @@ Grim Legends 2: Song of the Dark Swan
 Enigmatis 2: The Mists of Ravenwood
 Abyss: The Wraiths of Eden
 
-Topic 24:
+**Topic 24:**
 STAR WARS Jedi Knight - Mysteries of the Sith
 STAR WARS Jedi Knight - Dark Forces II
 STAR WARS Jedi Knight II - Jedi Outcast
@@ -872,5 +871,4 @@ STAR WARS Empire at War - Gold Pack
 Baldur's Gate II: Enhanced Edition
 Final DOOM
 
-Discussion:
-===========
+# Discussion:
