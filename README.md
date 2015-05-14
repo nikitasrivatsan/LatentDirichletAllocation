@@ -1,17 +1,11 @@
 ## Akshay Srivatsan - asrivat1@jhu.edu
-## Information Retrieval Final Project
-
-# Usage:
-
-First run grab_info_steam.py to scrape the Steam library for data. You can terminate that process whenever you like, but I found that good results were obtained after scraping ~1200 titles, which may take close to half an hour depending on connectivity.
-
-Then run run-LDA.sh to do inference on the LDA model using the collected data. In the results I have included, I ran it using K=25, alpha=0.1, beta=0.01, T=1100, and burnin=1000. The names of the input and output files are games and steam respectively.
-
-You can then rune analyze.py to print out a brief summary of the parameters that the model has learned. It takes args nameFile and outputFile which are games-names and steam respectively by default.
+## Topic Detection on Steam Video Games using Latent Dirichlet Allocation
 
 # Overview:
 
-For this project, I used the Latent Dirichlet Allocation model to perform topic detection on video games in the Steam library. Steam is a video game marketplace with 125 million active users that hosts thousands of popular games for PC. Each game on Steam has a corresponding web page that contains a brief description of the title, some keywords,
+The goal of this project was to use the Latent Dirichlet Allocation model to perform topic detection on video games in the Steam library.
+
+Steam is a video game marketplace with 125 million active users that hosts thousands of popular games for PC. Each game on Steam has a corresponding web page that contains a brief description of the title, some keywords, some technical specifications, and finally several user written reviews. Each page also provides a link to twelve games deemed similar by Steam's own recommendation system. This inherent connectedness can be interpreted as a graph with games as nodes and links as edges.
 
 # Results:
 
@@ -20,6 +14,7 @@ I obtained the following results on a dataset of 1247 titles, using 25 topics, p
 ## Common Words in Topics
 
 **Topic 0:**
+
 rpg
 combat
 character
@@ -872,3 +867,11 @@ Baldur's Gate II: Enhanced Edition
 Final DOOM
 
 # Discussion:
+
+# Usage:
+
+First run grab_info_steam.py to scrape the Steam library for data. You can terminate that process whenever you like, but I found that good results were obtained after scraping ~1200 titles, which may take close to half an hour depending on connectivity.
+
+Then run run-LDA.sh to do inference on the LDA model using the collected data. In the results I have included, I ran it using K=25, alpha=0.1, beta=0.01, T=1100, and burnin=1000. The names of the input and output files are games and steam respectively.
+
+You can then rune analyze.py to print out a brief summary of the parameters that the model has learned. It takes as arguments the name file and output file which are called games-names and steam respectively by default.
