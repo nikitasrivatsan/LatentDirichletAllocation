@@ -15,7 +15,7 @@ I obtained the following results on a dataset of 1247 titles, using 25 topics, p
 
 **Topic 0:**
 
-rpg
+rpg  
 combat
 character
 world
