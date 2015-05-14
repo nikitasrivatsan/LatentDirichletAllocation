@@ -1,4 +1,4 @@
-# Topic Detection on Steam Video Games using Latent Dirichlet Allocation
+# Topic Detection on Steam Video Games Using Latent Dirichlet Allocation
 ### Akshay Srivatsan - asrivat1@jhu.edu
 
 ## Overview:
@@ -9,13 +9,15 @@ The goal of this project was to use the Latent Dirichlet Allocation model to per
 
 Steam is a video game marketplace with 125 million active users that hosts thousands of popular games for PC. Each game on Steam has a corresponding web page that contains a brief description of the title, some keywords, some technical specifications, and finally several user written reviews. Each page also provides a link to twelve games deemed similar by Steam's own recommendation system. This inherent connectedness can be interpreted as a graph with games as nodes and links as edges. We can then scrape this graph using a breadth first search.
 
-![Image of LDA](http://upload.wikimedia.org/wikipedia/commons/d/d3/Latent_Dirichlet_allocation.svg)
+![Image of LDA](http://upload.wikimedia.org/wikipedia/commons/4/4d/Smoothed_LDA.png)
 
-Once we have the text from the html of the pages, we can do topic detection using the LDA model. In the LDA model, we take the approach that each word in each document is related to one of K different topics.
+Once we have the text from the html of the pages, we can do topic detection using the LDA model. In the LDA model, we take the approach that each word w in each document is related to some topic z, where there are K possible topics in total. For each document there is a distribution theta over the frequency of each topic within that document. For each topic, there is a distribution phi over the probability of any word given that topic. We place Dirichlet priors on phi and theta with hyperparameters alpha and beta.
+
+In order to learn this model, we can use Gibbs Sampling. Gibbs Sampling is an inference technique that works by repeatedly randomly sampling the latent variables (z in this case), and estimating the parameters based on the sampling. In effect, it takes a random walk through the sample space, and after enough iterations, its sampling distribution will converge towards a steady state which best describes the true distribution of the data.
 
 ## Results:
 
-I obtained the following results on a dataset of 1247 titles, using 25 topics, parameters 0.1 and 0.01 for alpha and beta respectively, and 1100 iterations of which 1000 were spent burning in the sampling chain to a stable state.
+I obtained the following results on a dataset of 1247 titles, using 25 topics, parameters 0.1 and 0.01 for alpha and beta respectively, and 1100 iterations of which 1000 were spent burning in the sampling chain to a stable distribution.
 
 ### Common Words in Topics
 
@@ -872,6 +874,8 @@ Baldur's Gate II: Enhanced Edition
 Final DOOM  
 
 ## Discussion:
+
+We can see from the results that the Gibbs Sampler has done a pretty good job of uncovering some latent topics present in the Steam web pages.
 
 ## Usage:
 
