@@ -875,7 +875,11 @@ STAR WARS Empire at War - Gold Pack
 Baldur's Gate II: Enhanced Edition  
 Final DOOM  
 
-See the output files for specific learned parameter values as well as the convergence of the log likelihood.
+### Log Likelihood
+
+![Log Likelihood](https://dl.dropboxusercontent.com/u/45972570/Capture.PNG)
+
+See the output files for specific learned parameter values.
 
 ## Discussion:
 
