@@ -23,7 +23,7 @@ I obtained the following results on a dataset of 1247 titles, using 25 topics, h
 
 ### Common Words in Topics
 
-**Topic 0:**
+**Topic 0:**  
 rpg
 combat
 character
