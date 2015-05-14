@@ -3,9 +3,9 @@
 
 ## Overview:
 
-The goal of this project was to use the Latent Dirichlet Allocation model to perform topic detection on video games in the Steam library.
-
 ![Image of Steam](http://img2.wikia.nocookie.net/__cb20110823175948/logopedia/images/a/ae/Steam_logo.svg)
+
+The goal of this project was to use the Latent Dirichlet Allocation model to perform topic detection on video games in the Steam library.
 
 Steam is a video game marketplace with 125 million active users that hosts thousands of popular games for PC. Each game on Steam has a corresponding web page that contains a brief description of the title, some keywords, some technical specifications, and finally several user written reviews. Each page also provides a link to twelve games deemed similar by Steam's own recommendation system. This inherent connectedness can be interpreted as a graph with games as nodes and links as edges. We can then scrape this graph using a breadth first search.
 
