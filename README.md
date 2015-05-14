@@ -1,17 +1,17 @@
-## Akshay Srivatsan - asrivat1@jhu.edu
-## Topic Detection on Steam Video Games using Latent Dirichlet Allocation
+# Topic Detection on Steam Video Games using Latent Dirichlet Allocation
+### Akshay Srivatsan - asrivat1@jhu.edu
 
-# Overview:
+## Overview:
 
 The goal of this project was to use the Latent Dirichlet Allocation model to perform topic detection on video games in the Steam library.
 
 Steam is a video game marketplace with 125 million active users that hosts thousands of popular games for PC. Each game on Steam has a corresponding web page that contains a brief description of the title, some keywords, some technical specifications, and finally several user written reviews. Each page also provides a link to twelve games deemed similar by Steam's own recommendation system. This inherent connectedness can be interpreted as a graph with games as nodes and links as edges.
 
-# Results:
+## Results:
 
 I obtained the following results on a dataset of 1247 titles, using 25 topics, parameters 0.1 and 0.01 for alpha and beta respectively, and 1100 iterations of which 1000 were spent burning in the sampling chain to a stable state.
 
-## Common Words in Topics
+### Common Words in Topics
 
 **Topic 0:**
 
@@ -439,7 +439,7 @@ played
 edition
 version
 
-## Documents with High Proportion of Topics
+### Documents with High Proportion of Topics
 
 **Topic 0:**
 Breath of Death VII
@@ -866,9 +866,9 @@ STAR WARS Empire at War - Gold Pack
 Baldur's Gate II: Enhanced Edition
 Final DOOM
 
-# Discussion:
+## Discussion:
 
-# Usage:
+## Usage:
 
 First run grab_info_steam.py to scrape the Steam library for data. You can terminate that process whenever you like, but I found that good results were obtained after scraping ~1200 titles, which may take close to half an hour depending on connectivity.
 
