@@ -77,23 +77,26 @@ public class LDA
         for(int t = 1; t <= T; t++)
         {
             // display progress
-            for(int i = 0; i < 52; i++)
-                System.console().printf("\u0008");
-            String progress = "";
-            progress += "[";
-            for(int i = 0; i < T; i += T / 50)
+            if(t % (T / 50) == 0)
             {
-                if(i < t)
+                for(int i = 0; i < 52; i++)
+                    System.console().printf("\u0008");
+                String progress = "";
+                progress += "[";
+                for(int i = 0; i < T; i += T / 50)
                 {
-                    progress += "=";
+                    if(i < t)
+                    {
+                        progress += "=";
+                    }
+                    else
+                    {
+                        progress += " ";
+                    }
                 }
-                else
-                {
-                    progress += " ";
-                }
+                progress += "]";
+                System.console().printf(progress);
             }
-            progress += "]";
-            System.console().printf(progress);
 
             // resample z
             for(int i = 0; i < m; i++)

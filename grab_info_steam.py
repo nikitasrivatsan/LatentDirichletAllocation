@@ -95,7 +95,7 @@ def grabInfo(link, stopWords, output, outputNames):
     text = ""
     for chunk in html.itertext():
         text += " " + chunk
-    words = re.findall(r"[A-Za-z]{2,}", text)
+    words = re.findall(r"[A-Za-z]{3,}(?!'[^sS])", text)
 
     # remove stop words
     for word in words:
