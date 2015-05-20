@@ -169,7 +169,7 @@ public class LDA
                     for(int w = 0; w < vocab.size(); w++)
                     {
                         phi_k_w_hat[k][w] *= t - 1 - burnin;
-                        phi_k_w_hat[k][w] = (n_k_w[k][w] + beta) / (n_k[k] + vocab.size() * beta);
+                        phi_k_w_hat[k][w] += (n_k_w[k][w] + beta) / (n_k[k] + vocab.size() * beta);
                         phi_k_w_hat[k][w] /= t - burnin;
                     }
                 }
