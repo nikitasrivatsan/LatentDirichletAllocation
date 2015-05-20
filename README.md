@@ -931,6 +931,6 @@ As stated above, I think it would be also worthwhile to improve the stoplist to 
 
 First run grab_info_steam.py to scrape the Steam library for data. You can terminate that process whenever you like, but I found that good results were obtained after scraping ~1200 titles, which may take close to half an hour depending on connectivity.
 
-Then run run-LDA.sh to do inference on the LDA model using the collected data. In the results I have included, I ran it using K=25, alpha=0.1, beta=0.01, T=1100, and burnin=1000. The names of the input and output files are games and steam respectively.
+Then run run-LDA.sh to do inference on the LDA model using the collected data. In the results I have described, I ran it using K=25, alpha=0.1, beta=0.01, T=1100, and burnin=1000. The names of the input and output files are games and steam respectively.
 
-You can then rune analyze.py to print out a brief summary of the parameters that the model has learned. It takes as arguments the name file and output file which are called games-names and steam respectively by default.
+You can then run analyze.py to print out a brief summary of the parameters that the model has learned. It takes as arguments the name file and output file which are called games-names and steam respectively by default.
