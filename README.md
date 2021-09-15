@@ -1,5 +1,4 @@
 # Topic Detection on Steam Video Games Using Latent Dirichlet Allocation
-### Akshay Srivatsan - asrivat1@jhu.edu
 
 ## Overview:
 
